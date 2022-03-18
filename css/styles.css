@@ -7,105 +7,6 @@
   font-family: 'Montserrat',sans-serif;
 }
 
-maincolor {
-  background: #466075;
-  background: #a8ccea;
-  background: #86A7C2;
-  background: #755422;
-  background: #C28425;
-  ;
-
-}
-
-/* NAV + header */
-nav{
-  padding: 5px 40px;
-}
-nav ul{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-nav ul li{
-  padding: 15px 0;
-  cursor: pointer;
-}
-nav ul li.items{
-  position: relative;
-  width: auto;
-  margin: 0 16px;
-  text-align: center;
-  order: 3;
-}
-nav ul li.items:after{
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 5px;
-  height: 2px;
-  width: 100%;
-  background: #466075;
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-nav ul li.items:hover:after{
-  opacity: 1;
-  bottom: 8px;
-}
-nav ul li.logo{
-  flex: 1;
-  color: #466075;
-  font-size: 40px;
-  font-weight: 600;
-  cursor: default;
-  user-select: none;
-}
-nav ul li a{
-  color: #466075;
-  font-size: 18px;
-  text-decoration: none;
-  transition: .4s;
-}
-nav ul li:hover a{
-  color: #466075;
-}
-nav ul li i{
-  font-size: 23px;
-}
-nav ul li.btn{
-  display: none;
-}
-nav ul li.btn.hide i:before{
-  content: '\f00d';
-}
-
-/* Reponsive menu , le chiffre est décidé par rapport au faite que la police ne deviens plus lisibile en dessous de 1150px */
-@media all and (max-width: 1150px){
-  nav{
-    padding: 5px 30px;
-  }
-  nav ul li.items{
-    width: 100%;
-    display: none;
-  }
-  nav ul li.items.show{
-    display: block;
-  }
-  nav ul li.btn{
-    display: block;
-  }
-  nav ul li.items:hover{
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #466075,
-                inset 0 0 10px #2f4150;
-  }
-  nav ul li.items:hover:after{
-    opacity: 0;
-  }
-}
-
 /* Image Principal */
 .accueil {
   width: 100%;
@@ -176,8 +77,6 @@ nav ul li.btn.hide i:before{
 
 #organisation {
   margin: 3vh auto;
-  border-top: 2px solid #466075;
-  border-bottom: 2px solid #466075;
 }
 .etapes {
   display: flex;
@@ -218,18 +117,24 @@ nav ul li.btn.hide i:before{
 
 /* Section A propos  */
 
+#apropos {
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+  border-top: 3px solid rgba(0,0,0,0.1);
+  margin: 5vh auto 5vh;
+}
 #apropos h2{
   font-size: 32px;
-  margin-left: 5vh;
+  margin: 5vh 5vh 5vh;
   font-weight: bold;
   color: #2f4150;
 }
 .presentation {
   display: flex;
-  margin: auto;
+  margin: 5vh auto 5vh;
   align-items: center;
   justify-content:center;
-  width: 80%;
+  width: 70%;
+
 }
 .presentation img {
   height: 500px;
@@ -238,7 +143,6 @@ nav ul li.btn.hide i:before{
  margin-top: 1vh;
  text-align: justify;
  line-height: 3vh;
- 
 }
 .text-apropos {
   padding-left: 4vh;
@@ -253,20 +157,82 @@ nav ul li.btn.hide i:before{
   font-style: italic;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   
   #apropos h2{
-    font-size: 27px;
     margin-left: 4vh;
+    font-size: 27px;
     font-weight: bold;
     color: #2f4150;
+    text-align: center;
   }
   .presentation {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 50%;
   }
   .presentation img {
     height: 400px;
     padding: 0;
   }
+  .presentation p {
+    line-height: 7vh;  
+  }
+  .presentation ul {
+    margin: 3vh 0 2vh 3vh;
+    line-height: 7vh;  
+  }
 }
 
+/* Section equipe  */
+
+#equipe {
+  margin-top: 5vh;
+}
+#equipe h2 {
+  font-size: 32px;
+  margin-left: 5vh;
+  font-weight: bold;
+  color: #2f4150;
+}
+
+#equipe>p {
+  margin-left: 8vh;
+  margin-top: 1.5vh;
+  color: #2f4150;
+}
+
+.equipe-block{
+  display: flex;
+  padding-top: 3vh;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.membre-teams {
+  width: 25vh;
+  padding: 2vh;
+  background-color: rgb(226, 226, 226);
+  border-radius: 30px;
+}
+.membre-teams img {
+  border: 3px solid #86A7C2;
+  border-radius: 99999px;
+}
+.membre-teams h3{
+  padding-top: 1vh;
+}
+.membre-teams p{
+  text-align: center;
+}
+@media (max-width:1080px) {
+  .equipe-block{
+    flex-direction: column;
+    align-items: center;
+  }
+  .membre-teams {
+    margin: 2vh;
+  }
+  #equipe h2 {
+    font-size: 27px;
+    text-align: center;
+  }
+}
