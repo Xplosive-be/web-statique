@@ -8,134 +8,136 @@
     <title>City-Go, Votre agence de CityTrip</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/79c22c92b4.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.btn').click(function(){
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+     </script>
 </head>
 
 <body>
-    <div class="background">
-        <!-- Header + h1 + nav. -->
-        <header>
-            <div class="wrapper-title-nav">
-                <h1>City-Go</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">City-go, votre partenaire belge pour votre citytrip</a></li>
-                        <li class="menu-deroulant"><a href="">Destination d'europe</a>
-                            <ul class="sous-menu">
-                                <li><a href="">Amsterdam</a></li>
-                                <li><a href="">Athènes</a></li>
-                                <li><a href="">Londres</a></li>
-                                <li><a href="">Paris</a></li>
-                                <li><a href="">Porto</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+    <!-- Header + h1 + nav. -->
+    <header>
+            <nav>
+                <ul>
+                    <li class="logo">City-Go</li>
+                    <li class="items"><a href="#">Acceuil</a></li>
+                    <li class="items"><a href="#">Destination d'europe</a></li>
+                    <li class="items"><a href="#">Amsterdam</a></li>
+                    <li class="items"><a href="#">Athènes</a></li>
+                    <li class="items"><a href="#">Londres</a></li>
+                    <li class="items"><a href="#">Paris</a></li>
+                    <li class="items"><a href="#">Porto</a></li> 
+                    <li class="items"><a href="#">Contact</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+    </header>
+    <!-- Section Image principal -->
+    <section class="accueil" id="image-principal">
+        <h2>Organisez votre City-trip</h2>
+        <p class="sous-titre">Votre meilleure décision pour les vacances.</p>
+        <a href="" class="button-main">Let's Go!</a>
+    </section>
+    <!-- Section organisation -->
+    <section id="organisation">
+        <div class="etapes">
+            <div class="bloc-icons">
+                <img src="/img/steps-icon-1.png" alt="Icone - Un crayon pour la prise de note">
+                <h3>Planifier</h3>
+                <p>Confiez-nous vos rêves d’évasion: en famille ou entre amis, nous trouverons la formule qui
+                    comblera vos attentes.</p>
             </div>
-        </header>
-        <!-- Section Image principal -->
-        <section class="accueil" id="image-principal">
-            <h2>Organisez votre City-trip</h2>
-            <p class="sous-titre">Votre meilleure décision pour les vacances</p>
-            <a href="" class="button-main">Let's Go!</a>
-        </section>
-        <!-- Section organisation -->
-        <section id="organisation">
-            <div class="3etapes">
-                <div class="bloc-cions">
-                    <img src="/img/steps-icon-1.png" alt="Icone - Un crayon pour la prise de note">
-                    <h3>Planifier</h3>
-                    <p>Confiez-nous vos rêves d’évasion: en famille ou entre amis, nous trouverons la formule qui
-                        comblera vos attentes.</p>
-                </div>
-                <div class="bloc-icons">
-                    <img src="/img/steps-icon-2.png" alt="Icone - Plusieurs feuille représentant l'organisation">
-                    <h3>Organiser</h3>
-                    <p>Bénéficiez de l’expertise de nos spécialistes de chaques destination, ils vous accompagnent dans
-                        la réalisation de votre city trip</p>
-                </div>
-                <div class="bloc-cions">
-                    <img src="/img/steps-icon-3.png" alt="Icone - fusée qui décolle">
-                    <h3>Voyager</h3>
-                    <p>Nous nous chargeons d’assurer votre sécurité de veiller à votre pleine sérénité tout au long de
-                        votre city trip.</p>
-                </div>
+            <div class="bloc-icons">
+                <img src="/img/steps-icon-2.png" alt="Icone - Plusieurs feuille représentant l'organisation">
+                <h3>Organiser</h3>
+                <p>Bénéficiez de l’expertise de nos spécialistes de chaques destination, ils vous accompagnent dans
+                    la réalisation de votre city trip</p>
             </div>
-        </section>
-        <!-- Section à propos regroupant Une image et un text  -->
-        <section id="apropos">
-            <h2>City-Go, c’est quoi ?</h2>
-            <div class="presentation">
-                <img src="img/famille_apropos.png" alt="Illustration: Famille qui se prends en photo en vacance">
-                <div class="text-apropos">
-                    <p>
-                        Nous nous engageons à proposer uniquement les meilleurs prix à nos clients. C’est la raison pour
-                        laquelle vous trouverez sur notre site un choix limité de destinations. Nous proposons des
-                        vacances
-                        tout inclus dans les plus grande ville d’Europe car nous sommes certains que nos tarifs sont
-                        imbattables.
-                    </p>
-                    <p>
-                        Depuis plus de 70 ans, l’entreprise a bâti sa réputation sur l’expertise de City trip en europe
-                        et a
-                        diversifié ses activités. Aujourd’hui, elle est active dans:
-                    </p>
-                    <ul>
-                        <li>la production et la commercialisation de voyages organisés (forfaits) en train, en avion et
-                            de vacances individuelles en voiture en partenariat avec le réseau des agences de voyages de
-                            la
-                            Belgique francophone, du nord de la France et de la Lorraine. (tour-opérateur)</li>
+            <div class="bloc-icons">
+                <img src="/img/steps-icon-3.png" alt="Icone - fusée qui décolle">
+                <h3>Voyager</h3>
+                <p>Nous nous chargeons d’assurer votre sécurité de veiller à votre pleine sérénité tout au long de
+                    votre city trip.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section à propos regroupant Une image et un text  -->
+    <section id="apropos">
+        <h2>City-Go, c’est quoi ?</h2>
+        <div class="presentation">
+            <img src="img/famille_apropos.png" alt="Illustration: Famille qui se prends en photo en vacance">
+            <div class="text-apropos">
+                <p>
+                    Nous nous engageons à proposer uniquement les meilleurs prix à nos clients. C’est la raison pour
+                    laquelle vous trouverez sur notre site un choix limité de destinations. Nous proposons des
+                    vacances
+                    tout inclus dans les plus grande ville d’Europe car nous sommes certains que nos tarifs sont
+                    imbattables.
+                </p>
+                <p>
+                    Depuis plus de 70 ans, l’entreprise a bâti sa réputation sur l’expertise de City trip en europe
+                    et a
+                    diversifié ses activités. Aujourd’hui, elle est active dans:
+                </p>
+                <ul>
+                    <li>la production et la commercialisation de voyages organisés (forfaits) en train, en avion et
+                        de vacances individuelles en voiture en partenariat avec le réseau des agences de voyages de
+                        la
+                        Belgique francophone, du nord de la France et de la Lorraine. (tour-opérateur)</li>
 
-                        <li>La création et l’organisation de voyages à la carte pour groupes pré-constitués, aussi bien
-                            à l’incoming qu’à l’outgoing.</li>
+                    <li>La création et l’organisation de voyages à la carte pour groupes pré-constitués, aussi bien
+                        à l’incoming qu’à l’outgoing.</li>
 
-                        <li>La vente de voyages à forfaits de tous les voyagistes (agences de voyages)</li>
-                    </ul>
-                    <p>
-                        Chaque jour constitue un projet nouveau, une énergie nouvelle, en vue de la satisfaction
-                        complète du
-                        voyageur.
-                    </p>
-                </div>
+                    <li>La vente de voyages à forfaits de tous les voyagistes (agences de voyages)</li>
+                </ul>
+                <p>
+                    Chaque jour constitue un projet nouveau, une énergie nouvelle, en vue de la satisfaction
+                    complète du
+                    voyageur.
+                </p>
             </div>
-        </section>
-        <section id="equipe">
-            <h2>Notre équipe</h2>
-            <p>Nos spécialistes sont disponible pour vous aider lors de votre choix de destination dans toute l’europe.
-            </p>
-            <div class="membre-teams">
-                <img src="/img/fred.jpg" alt="Photo de Fred">
-                <h3>Fred Jackson</h3>
-                <p>Spécialiste du millieu de la nuit</p>
-            </div>
-            <div class="membre-teams">
-                <img src="img/Angela.jpg" alt="">
-                <h3>Angela Lopez</h3>
-                <p>Spécialiste de l’Europe du Sud </p>
-            </div>
-            <div class="membre-teams">
-                <img src="img/Melissa.jpg" alt="">
-                <h3>Melissa Dubois</h3>
-                <p>Spécialiste de l’Europe Central</p>
-            </div>
-            <div class="membre-teams">
-                <img src="img/bjorn.jpg" alt="">
-                <h3>Björn Andersson</h3>
-                <p>Spécialiste de l’Europe du Nord</p>
-            </div>
+        </div>
+    </section>
+    <section id="equipe">
+        <h2>Notre équipe</h2>
+        <p>Nos spécialistes sont disponible pour vous aider lors de votre choix de destination dans toute l’europe.
+        </p>
+        <div class="membre-teams">
+            <img src="/img/fred.jpg" alt="Photo de Fred">
+            <h3>Fred Jackson</h3>
+            <p>Spécialiste du millieu de la nuit</p>
+        </div>
+        <div class="membre-teams">
+            <img src="img/Angela.jpg" alt="">
+            <h3>Angela Lopez</h3>
+            <p>Spécialiste de l’Europe du Sud </p>
+        </div>
+        <div class="membre-teams">
+            <img src="img/Melissa.jpg" alt="">
+            <h3>Melissa Dubois</h3>
+            <p>Spécialiste de l’Europe Central</p>
+        </div>
+        <div class="membre-teams">
+            <img src="img/bjorn.jpg" alt="">
+            <h3>Björn Andersson</h3>
+            <p>Spécialiste de l’Europe du Nord</p>
+        </div>
 
-        </section>
+    </section>
 
-        <footer>
-            <p>© 2021 Smeyers - Création de Site Web Statique 2021-2022</p>
-            <div class="social">
-                <a href="https://m.facebook.com/samir.smeyers"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com/in/samir-smeyers-459432b4/"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:smeyers.samir@gmail.com"><i class="fa-solid fa-at"></i></a>
-            </div>
-        </footer>
+    <footer>
+        <p>© 2021 Smeyers - Création de Site Web Statique 2021-2022</p>
+        <div class="social">
+            <a href="https://m.facebook.com/samir.smeyers"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/samir-smeyers-459432b4/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:smeyers.samir@gmail.com"><i class="fa-solid fa-at"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

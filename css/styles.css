@@ -1,51 +1,139 @@
 /* RESET du CSS  */
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  body {
-    background-color: #e6e6e6;
-  }
-  
-/* NAV + header */
- 
-
-/* Image principal */
-
-.accueil {
-  width: 100%;
-  height: 50vh;
-  background-image: url(../img/bg_image.jpg);
-  background-position: center;
-  padding-top: 1px;
-  border: 2px dotted #dd9933;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
 }
 
+body {
+  background-color: #e6e6e6;
+}
+
+maincolor {
+  background: #466075;
+  background: #BBE1FF;
+  background: #86A7C2;
+  background: #755422;
+  background: #C28425;
+  ;
+
+}
+
+/* NAV + header */
+nav{
+  background: #466075;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #BBE1FF;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: #BBE1FF;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: #BBE1FF;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: #BBE1FF;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+/* Reponsive menu , le chiffre est décidé par rapport au faite que la police ne deviens plus lisibile en dessous de 1150px */
+@media all and (max-width: 1150px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #86A7C2,
+                inset 0 0 10px #BBE1FF;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+/* Image Principal */
+.accueil {
+  width: 100%;
+  height: auto;
+  background-image: url('../img/bg_image.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 1px;
+  margin: px auto;
+  border-top: 2px dotted white;
+  border-bottom: 2px dotted white;
+}
 .accueil h2 {
   text-align: center;
   font-size: 100px;
   text-shadow: 0 0 10px #000;
   color: #f1f1f1;
   margin: 10vh 0 0 0;
-
 }
-
 .button-main {
   border-radius: 30px;
-  background: #fcb900;
-  border: 1px solid #fcb900;
+  background: #466075;
+  border: 1px solid #BBE1FF;
   color: #fff;
   text-align: center;
   font-size: 22px;
@@ -53,14 +141,14 @@ html {
   width: 200px;
   height: 70px;
   line-height: 70px;
-  text-decoration: none;
-  margin: 50px auto 0;
+  text-decoration: none;  
+  margin: 50px auto;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .button-main:hover {
-  background: #dd9933;
-  color: red;
+  background: #86A7C2;
+  color: #466075;
 }
 .sous-titre {
   text-align: center;
@@ -70,12 +158,10 @@ html {
   margin: 5px 0;
   text-shadow: 0 0 10px #000;
 }
-
 @media screen and (max-width: 850px) {
   .accueil {
-      height: 60vh;
+      height: auto;
   }
-
   .accueil h2 {
       font-size: 60px;
   }
@@ -87,6 +173,32 @@ html {
       height: auto;
       line-height: 50px;
       font-size: 18px;
-      margin: 25px auto 0;
+      margin: 25px auto;
   }
 }
+
+#organisation {
+  margin: 50px auto;
+  background: #466075;
+}
+.etapes {
+  display: flex;
+}
+
+.bloc-icons {
+  text-align: center;
+  margin: 2vh;
+}
+
+.bloc-icons img {
+  filter: invert();
+}
+.bloc-icons h3{
+  margin: 1vh;
+  color
+}
+
+
+
+
+
