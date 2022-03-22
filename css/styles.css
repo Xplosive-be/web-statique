@@ -175,11 +175,11 @@
     padding: 0;
   }
   .presentation p {
-    line-height: 7vh;  
+    line-height: 2vh;  
   }
   .presentation ul {
     margin: 3vh 0 2vh 3vh;
-    line-height: 7vh;  
+    line-height: 2vh;  
   }
 }
 
@@ -204,6 +204,7 @@
 .equipe-block{
   display: flex;
   padding-top: 3vh;
+  padding-bottom: 3vh;
   justify-content: space-evenly;
   text-align: center;
 }
