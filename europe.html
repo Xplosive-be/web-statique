@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City-Go, Votre agence de CityTrip</title>
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/europe.css">
+    <script src="https://kit.fontawesome.com/79c22c92b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Header + h1 + nav. -->
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">City-Go</li>
+                <li class="items"><a href="index.html">Accueil</a></li>
+                <li class="items"><a href="europe.html">Destination d'europe</a></li>
+                <li class="items"><a href="amstedam.html">Amsterdam</a></li>
+                <li class="items"><a href="athenes.html">Athènes</a></li>
+                <li class="items"><a href="londres.html">Londres</a></li>
+                <li class="items"><a href="paris.html">Paris</a></li>
+                <li class="items"><a href="porto.html">Porto</a></li>
+                <li class="items"><a href="contact.html">Contact</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="presentation-section">
+        <h2>Destination d’Europe</h2>
+        <div class="presentation-europe">
+            <div>
+                <p>
+                    Partir en <strong>Europe</strong> c’est découvrir de nombreuses cultures et de nombreux paysages
+                    différents.
+                    Tout dépend de ce que vous recherchez mais la réponse se trouvera forcément dans une des villes
+                    d’Europe proposée dans notre catalogue.
+                    Si vous voulez du soleil, vous pourrez profiter d’une ville tels que <strong>Athènes,
+                        Madrid</strong> ou encore <strong>Porto</strong> qui vous offrent des vacances détente et
+                    farniente.</p>
+
+                <p>Mais si vous êtes également attirés par des destinations plus froides mais toujours aussi belles,
+                    vous pouvez vous rendre à <strong>Bucarest</strong> ou encore <strong>Amsterdam</strong>. Tant de
+                    choses à voir dans ces pays qui attirent de plus en plus de monde chaque année et qui ne finiront
+                    pas de vous émerveiller.</p>
+
+                <p>Pour ceux qui rêvent de culture et d’histoire, les grandes villes européennes comme
+                    <strong>Londres, Paris </strong>ou encore <strong>Dublin</strong> sauront répondre à vos désirs
+                    notamment grâce à leurs musées, leurs évènements récurrents ou encore leurs lieux chargés
+                    d’histoire.
+                    Et l’avantage dans tout cela, c’est que ce n’est pas loin, vous pouvez donc choisir de partir un
+                    week-end en Europe ou une semaine ou plus selon vos disponibilités!
+                </p>
+
+                <p>Alors peu importe vos envies de voyage, l’<strong>Europe</strong> est toujours une bonne solution
+                    pour <strong>vos vacances!</strong></p>
+
+            </div>
+            <img src="img/ville/image_carte_europe.jpg"
+                alt="Carte de l'europe avec plusieurs punaises de couleur sur plusieurs capital de pays ">
+        </div>
+    </section>
+    <section id="image-europe">
+        <div class="galerie">
+            <figure>
+                <a href="amsterdam.html"><img src="img/ville/Amsterdam.png" alt="Amsterdam Photo de la ville "></a>
+                <figcaption>Amsterdam</figcaption>
+            </figure>
+        </div>
+        <div class="galerie">
+            <figure>
+                <a href="athenes.html"></a><img src="img/ville/athenes.png" alt="Athènes Photo de la ville "></a>
+                <figcaption>Athènes</figcaption>
+            </figure>
+        </div>
+        <div class="galerie">
+            <figure>
+                <a href="londres.html"><img src="img/ville/London.png" alt="Londres Photo de la ville "></a>
+                <figcaption>Londres</figcaption>
+            </figure>
+        </div>
+        <div class="galerie">
+            <figure>
+                <a href="paris.html"></a><img src="img/ville/Paris.png" alt="Paris Photo de la ville "></a>
+                <figcaption>Paris</figcaption>
+            </figure>
+        </div>
+        <div class="galerie">
+            <figure>
+                <a href="porto.html"><img src="img/ville/Porto.png" alt="Porto Photo de la ville "></a>
+                <figcaption>Porto</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- Bas de page  -->
+    <footer>
+        <p class="foo-desktop">Smeyers © - Création de Site Web Statique 2021-2022</p>
+        <p class="foo-mobile">Smeyers © - Web Statique 2021-2022</p>
+        <div class="social">
+            <a href="https://m.facebook.com/samir.smeyers"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/samir-smeyers-459432b4/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:smeyers.samir@gmail.com"><i class="fa-solid fa-at"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
