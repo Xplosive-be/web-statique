@@ -1,0 +1,121 @@
+.underline {
+    text-decoration: underline;
+}
+
+
+.amsterdam-section {
+    display: flex;
+    margin: 5vh auto 5vh;
+    justify-content:center;
+    width: 70%;
+}
+
+h2{ 
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #2f4150;
+    padding-top: 3vh;
+    margin-bottom: 2vh;
+}
+h3 {
+
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    color: #2f4150;
+    line-height: 50px;
+}
+
+
+
+
+.amsterdam-presentation p {
+    margin: auto;
+    text-align: justify;
+    width: 70%;
+    line-height: 2vh;
+}
+
+.stats {
+    margin: 1vh auto;
+    text-align: justify;
+    width: 70%;
+    line-height: 2vh;
+} 
+.stats ul {
+    padding-left: 3vh;
+}
+
+.amsterdam-top10 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+
+.amsterdam-top10-txt {
+    text-align: justify;
+    width: 70%;
+    line-height: 2vh;
+}
+
+.amsterdam-top10-txt h2 {
+    margin-left: -20vh;
+}
+
+.amsterdam-top10-txt li {
+    padding: 2vh 0;
+    font-weight: bold;
+}
+
+.amsterdam-top10-txt p {
+    font-style: italic;
+    margin-left: 1vh;
+}
+
+.amsterdam-top10-img {
+    width: 40%;
+    margin-top: 10vh;
+}
+
+.amsterdam-top10 img{
+    width: 350px;
+    display: block;
+    margin: 2vh auto;
+}
+
+@media screen and (max-width: 1700px) {
+    .amsterdam-top10 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stats ul {
+        padding-left: 0;
+    }
+
+    .amsterdam-top10-txt li {
+        text-align: center;
+    }
+
+    .amsterdam-top10-txt ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .amsterdam-top10-txt h2 {
+        margin-left: 0;
+        line-height: 4vh;
+    }
+    .amsterdam-top10-txt p {
+        margin-left: auto;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    .amsterdam-top10-img{
+        width: 350px;
+        margin: 0;
+    }
+    
+}
