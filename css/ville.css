@@ -2,12 +2,10 @@
     text-decoration: underline;
 }
 
-
-.amsterdam-section {
-    display: flex;
+section {
+    width: 70%;
     margin: 5vh auto 5vh;
     justify-content:center;
-    width: 70%;
 }
 
 h2{ 
@@ -27,65 +25,66 @@ h3 {
     line-height: 50px;
 }
 
-
-
-
-.amsterdam-presentation p {
+.presentation p {
     margin: auto;
     text-align: justify;
     width: 70%;
-    line-height: 2vh;
+    line-height: vh;
 }
 
 .stats {
     margin: 1vh auto;
     text-align: justify;
     width: 70%;
-    line-height: 2vh;
+    line-height: 4vh;
 } 
 .stats ul {
     padding-left: 3vh;
 }
 
-.amsterdam-top10 {
+.top {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 50px;
 }
 
-.amsterdam-top10-txt {
+.direction-normal {
+    flex-direction: row;
+}
+
+.top-txt {
     text-align: justify;
     width: 70%;
     line-height: 2vh;
 }
 
-.amsterdam-top10-txt h2 {
+.top-txt h2 {
     margin-left: -20vh;
 }
 
-.amsterdam-top10-txt li {
+.top-txt li {
     padding: 2vh 0;
     font-weight: bold;
 }
 
-.amsterdam-top10-txt p {
+.top-txt p {
     font-style: italic;
     margin-left: 1vh;
 }
 
-.amsterdam-top10-img {
+.top-img {
     width: 40%;
     margin-top: 10vh;
 }
 
-.amsterdam-top10 img{
+.top img{
     width: 350px;
     display: block;
     margin: 2vh auto;
 }
 
 @media screen and (max-width: 1700px) {
-    .amsterdam-top10 {
+    .top {
         flex-direction: column;
         align-items: center;
     }
@@ -93,27 +92,33 @@ h3 {
         padding-left: 0;
     }
 
-    .amsterdam-top10-txt li {
+    .top-txt li {
         text-align: center;
     }
 
-    .amsterdam-top10-txt ol {
+    .top-txt ol {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .amsterdam-top10-txt h2 {
+    .top-txt h2 {
         margin-left: 0;
-        line-height: 4vh;
+        line-height: 4rem;
     }
-    .amsterdam-top10-txt p {
+    .top-txt p {
         margin-left: auto;
         text-align: center;
-        line-height: 3vh;
+        line-height: 3rem;
     }
 
-    .amsterdam-top10-img{
+    p {
+        margin-left: auto;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    .top-img{
         width: 350px;
         margin: 0;
     }
