@@ -38,6 +38,69 @@
             </ul>
         </nav>
     </header>
+    <section class="contact">
+        <div class="contact">
+            <div class="text-contact">
+                <p>Pour vous le conseil et l’accompagnement sont importants…</p>
+                <p>Offrez-vous un conseiller voyages ! Des vacances en toute sérénité</p>
+                <strong>Expertise et conseil sur mesure</strong>
+                <p>Une gamme de services exclusifs pour faciliter votre voyage</p>
+            </div>
+            <div class="img-contact">
+                <img src="img/page-contact.jpg" alt="Une téléphoniste devant son ordinateur">
+            </div>
+        </div>
+
+        <div class="formulaire-contact">
+            <div class="text-contact">
+                
+                <form action="contact.html" method="post">
+                    <label>Nom <span>*</span></label>
+                    <input type="text" name="Nom" required>
+                    <label>Prénom</label>
+                    <input type="text" name="prenom" required>
+                    <label>Téléphone</label>
+                    <input type="text" name="Telephone" placeholder="+32 X XXX XX XX" required>
+                    <label>Nom</label>
+                    <input type="email" name="email" required>
+                    <label>Combien de temps durera votre CityTrip? </label>
+                    <input type="range" value="3" min="3" max="15" oninput="this.nextElementSibling.value = this.value">
+                    <output>3</output>
+                    <fieldset>
+                        <legend>Destination <span>*</span></legend>
+                        <div>
+                          <input type="checkbox" id="amsterdam" name="interest" value="amsterdam">
+                          <label for="amsterdam">Amsterdam</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="athenes" name="interest" value="athenes" checked>
+                          <label for="athenes">Athènes</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="londres" name="interest" value="londres">
+                          <label for="londres">Londres</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="paris" name="interest" value="paris">
+                          <label for="paris">Paris</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="porto" name="interest" value="porto">
+                          <label for="porto">Porto</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="autres" name="interest" value="autres">
+                          <label for="autres">Autres</label>
+                        </div>
+                      </fieldset>
+                      <label>Une demande particulière ou une information?</label>
+                      <textarea name="demande" id="demande" cols="56" rows="15">
+                      </textarea>
+                      <button type="submit">Envoyer!</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- Bas de page  -->
     <footer>
         <p class="foo-desktop">Smeyers © - Création de Site Web Statique 2021-2022</p>
