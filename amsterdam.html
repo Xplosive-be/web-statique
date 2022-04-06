@@ -8,8 +8,10 @@
     <title>City-Go, Votre agence de CityTrip</title>
     <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/ville.css">
-    <script src="https://kit.fontawesome.com/79c22c92b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/lightbox.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/79c22c92b4.js" crossorigin="anonymous"></script>
+
     <script>
         $(document).ready(function () {
             $('.btn').click(function () {
@@ -21,6 +23,7 @@
 </head>
 
 <body>
+    <script src="js/lightbox.js"></script>
     <!-- Header + h1 + nav. -->
     <header>
         <nav>
@@ -69,46 +72,78 @@
                     Les musées sont une des attractions touristiques majeures d’Amsterdam. Les plus célèbres d’entre eux
                     sont le Rijksmuseum, le musée Van Gogh et le Stedelijk, mais il y en a beaucoup d’autres ! Amsterdam
                     compte plus d’une cinquantaine de musées qui attirent chaque année des millions de visiteurs.</p>
+                <h2>Les 10 raisons de venir visiter Amsterdam </h2>
             </div>
             <div class="top">
-                
-            <div class="top-txt">
-                <h2>Les 10 raisons de venir visiter Amsterdam </h2>
-                <ol>
-                    <li>Les toiles de maîtres</li>
-                    <p>Rembrandt, Vermeer, Frans Hals vous attendent au Rijksmuseum, tandis que le Van Gogh Museum est entièrement dédié à l’œuvre du célèbre peintre et de quelques-uns de ses contemporains tels Gauguin, Toulouse-Lautrec et Monet. Aux cimaises du Stedelijk Museum, vous admirerez les œuvres de Matisse, Mondrian et Malevitch.</p>
-                    <li>Les vues plongeantes</li>
-                    
-                    <p>Pour un panorama sur les canaux, grimpez au sommet des clochers de l’Oude Kerk, de la Westerkerk, et de la Zuiderkerk. Superbes vues sur l’IJ et le port depuis le toit du NeMo et le 7e étage de la bibliothèque OBA.</p>
-                    <li>Les promenades romantiques</li>
-                    <p>Faites-vous immortaliser au milieu des ponts qui enjambent les plus beaux canaux de la ville : l’enfilade des sept ponts du Reguliersgracht, le Brouwersgracht avec ses entrepôts et ses péniches, devant les maisons très patriciennes du Gouden Bocht ou encore à l’angle des trois canaux devant la coquette Maison aux Trois Canaux</p>
-                    <li>La convivialité</li>
-                    <p>La ville foisonne d’endroits où l’on peut rencontrer les Amstellodamois et faire la fête, autour d’une bière ou d’un verre de genièvre dans un proeflokaal, dans un café brun du Jordaan mais aussi lors d’un concert de jazz à l’Engelbewaarder.</p>
-                    <li>L’air du large</li>
-                    <p>Vivez le prestigieux passé maritime d’Amsterdam au Scheepvaart museum et à bord de la VOC et allez humer l’air du large dans le Zeeburg, les îles Java et KNSM ou au Lloyd, dernière escale avant la traversée de l’Atlantique.</p>
-                    <li>Le chatoiement des briques</li>
-                    <p>Le chromatisme est une composante de l’éclie d’Amsterdam, née au début du XXe s. On en trouve de beaux exemples au Beurs van Berlage, dans le quartier De Pijp, au Burcht van Berlage et au Museum Het Schip.</p>
-                    <li>Le charme discret de la bourgeoisie</li>
-                    <p>Il s’observe dans les grachtenhuizen (maisons de canaux). Après avoir vu l’exposition au Grachtenhuis, découvrez les intérieurs XVIIe-XVIIIe s. (Museum Van Loon, Museum Willet-Hlithuysen, Kattenkabinet).</p>
-                    <li>Le parfum des jardins secrets</li>
-                    <p>Au hasard d’une balade, entrez dans la cour d’un hofje du Jordaan, traversez la Schutters-galerij pour voir des peintures grand format et découvrez les plus beaux jardins clos (Museum Van Loon, Museum Willet-Hlithuysen) et exotique (De Hortus).</p>
-                    <li>Les lieux insliites</li>
-                    <p>Laissez-vous surprendre: une église cachée dans un grenier (Museum On’s Lieve Herr op Slider), une maison patricienne dédiée au sac à main (Tassen-museum Hendrikje), une clilection de pipes des cinq continents (Amsterdam Pipe Museum), un temple chinois (Fo Guang Shan He Hua), une péniche aménagée en maison (Houseboat Museum), ou encore le cabinet de curiosité de la Rembrandthuis. </p>
-                    <li>Trouver la perle rare</li>
-                    <p>Amsterdam est la Mecque des chineurs qui écument la Nieuwe Spiegelstraat, farfouillent au Rommelmarkt (puces) de Waterlooplein et à l’Antiekmarkt De Looier ; tandis que l’amateur de livres anciens ira dans la galerie de l’Oudemanhuispoort.</p>
-                </ol>
+                <div class="top-txt">
+                    <ol>
+                        <li>Les toiles de maîtres</li>
+                        <p>Rembrandt, Vermeer, Frans Hals vous attendent au Rijksmuseum, tandis que le Van Gogh Museum
+                            est entièrement dédié à l’œuvre du célèbre peintre et de quelques-uns de ses contemporains
+                            tels Gauguin, Toulouse-Lautrec et Monet. Aux cimaises du Stedelijk Museum, vous admirerez
+                            les œuvres de Matisse, Mondrian et Malevitch.</p>
+                        <li>Les vues plongeantes</li>
+                        <p>Pour un panorama sur les canaux, grimpez au sommet des clochers de l’Oude Kerk, de la
+                            Westerkerk, et de la Zuiderkerk. Superbes vues sur l’IJ et le port depuis le toit du NeMo et
+                            le 7e étage de la bibliothèque OBA.</p>
+                        <li>Les promenades romantiques</li>
+                        <p>Faites-vous immortaliser au milieu des ponts qui enjambent les plus beaux canaux de la
+                            ville : l’enfilade des sept ponts du Reguliersgracht, le Brouwersgracht avec ses entrepôts
+                            et ses péniches, devant les maisons très patriciennes du Gouden Bocht ou encore à l’angle
+                            des trois canaux devant la coquette Maison aux Trois Canaux</p>
+                        <li>La convivialité</li>
+                        <p>La ville foisonne d’endroits où l’on peut rencontrer les Amstellodamois et faire la fête,
+                            autour d’une bière ou d’un verre de genièvre dans un proeflokaal, dans un café brun du
+                            Jordaan mais aussi lors d’un concert de jazz à l’Engelbewaarder.</p>
+                        <li>L’air du large</li>
+                        <p>Vivez le prestigieux passé maritime d’Amsterdam au Scheepvaart museum et à bord de la VOC et
+                            allez humer l’air du large dans le Zeeburg, les îles Java et KNSM ou au Lloyd, dernière
+                            escale avant la traversée de l’Atlantique.</p>
+                        <li>Le chatoiement des briques</li>
+                        <p>Le chromatisme est une composante de l’éclie d’Amsterdam, née au début du XXe s. On en trouve
+                            de beaux exemples au Beurs van Berlage, dans le quartier De Pijp, au Burcht van Berlage et
+                            au Museum Het Schip.</p>
+                        <li>Le charme discret de la bourgeoisie</li>
+                        <p>Il s’observe dans les grachtenhuizen (maisons de canaux). Après avoir vu l’exposition au
+                            Grachtenhuis, découvrez les intérieurs XVIIe-XVIIIe s. (Museum Van Loon, Museum
+                            Willet-Hlithuysen, Kattenkabinet).</p>
+                        <li>Le parfum des jardins secrets</li>
+                        <p>Au hasard d’une balade, entrez dans la cour d’un hofje du Jordaan, traversez
+                            la Schutters-galerij pour voir des peintures grand format et découvrez les plus beaux
+                            jardins clos (Museum Van Loon, Museum Willet-Hlithuysen) et exotique (De Hortus).</p>
+                        <li>Les lieux insliites</li>
+                        <p>Laissez-vous surprendre: une église cachée dans un grenier (Museum On’s Lieve Herr op
+                            Slider), une maison patricienne dédiée au sac à main (Tassen-museum Hendrikje), une
+                            clilection de pipes des cinq continents (Amsterdam Pipe Museum), un temple chinois (Fo Guang
+                            Shan He Hua), une péniche aménagée en maison (Houseboat Museum), ou encore le cabinet de
+                            curiosité de la Rembrandthuis. </p>
+                        <li>Trouver la perle rare</li>
+                        <p>Amsterdam est la Mecque des chineurs qui écument la Nieuwe Spiegelstraat, farfouillent au
+                            Rommelmarkt (puces) de Waterlooplein et à l’Antiekmarkt De Looier ; tandis que l’amateur de
+                            livres anciens ira dans la galerie de l’Oudemanhuispoort.</p>
+                    </ol>
+                </div>
+                <div class="top-img">
+                    <a href="img/amsterdam/Amsterdam_Schifffahrtsmuseum-scaled.jpg" data-lightbox="Amsterdam">
+                        <img src="img/amsterdam/Amsterdam_Schifffahrtsmuseum-scaled.jpg" alt="Schifffahrt Museum">
+                    </a>
+                    <a href="img/amsterdam/Grachtenhuizen-maisons-de-canaux-Amsterdam.-scaled.jpg" data-lightbox="Amsterdam">
+                        <img src="img/amsterdam/Grachtenhuizen-maisons-de-canaux-Amsterdam.-scaled.jpg"
+                            alt="Grachtenhuizen Maison de canaux ">
+                    </a>
+                    <a href="img/amsterdam/Pont-dAmsterdam-scaled.jpg" data-lightbox="Amsterdam">
+                        <img src="img/amsterdam/Pont-dAmsterdam-scaled.jpg" alt="Un pont avec des vélos dessus">
+                    </a>
+                    <a href="img/amsterdam/Rijksmuseum-a-Amsterdam-scaled.jpg" data-lightbox="Amsterdam">
+                        <img src="img/amsterdam/Rijksmuseum-a-Amsterdam-scaled.jpg" alt="Rijks Museum ">
+                    </a>
+                    <a href="img/amsterdam/pays-bas-amsterdam-9.jpg" data-lightbox="Amsterdam">
+                        <img src="img/amsterdam/pays-bas-amsterdam-9.jpg"
+                            alt="Pont en Pierre avec maison en arrière plan">
+                    </a>
+                </div>
             </div>
-            <div class="top-img">
-                <img src="img/amsterdam/Amsterdam_Schifffahrtsmuseum-scaled.jpg" alt="Schifffahrt Museum">
-                <img src="img/amsterdam/Grachtenhuizen-maisons-de-canaux-Amsterdam.-scaled.jpg"
-                    alt="Grachtenhuizen Maison de canaux ">
-                <img src="img/amsterdam/Pont-dAmsterdam-scaled.jpg" alt="Un pont avec des vélos dessus">
-                <img src="img/amsterdam/Rijksmuseum-a-Amsterdam-scaled.jpg" alt="Rijks Museum ">
-                <img src="img/amsterdam/pays-bas-amsterdam-9.jpg" alt="Pont en Pierre avec maison en arrière plan">
-            </div>
-            
         </div>
-    </div>
     </section>
     <!-- Bas de page  -->
     <footer>

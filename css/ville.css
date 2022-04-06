@@ -7,7 +7,6 @@ section {
     margin: 5vh auto 5vh;
     justify-content:center;
 }
-
 h2{ 
     font-size: 32px;
     text-align: center;
@@ -17,16 +16,15 @@ h2{
     margin-bottom: 2vh;
 }
 h3 {
-
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     color: #2f4150;
-
+    margin: 2vh 0;
 }
 
 .presentation p {
-    margin: auto;
+    margin: 2vh auto;
     text-align: justify;
     width: 70%;
 }
@@ -41,10 +39,14 @@ h3 {
 
 }
 
+
 .top {
     display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 50px;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    width: 70%;
+    margin: auto;
 }
 
 .direction-normal {
@@ -65,24 +67,23 @@ h3 {
     font-weight: bold;
 }
 
-.top-txt li::marker{
-    text-align: ;
-}
-
 .top-txt p {
     font-style: italic;
-    margin: 0 10vh;
+    margin: 0vh;
 }
 
 .top-img {
     width: 40%;
     margin-top: 10vh;
+    margin-left: 5vh;
 }
 
 .top img{
-    width: 350px;
+    width: 450px;
     display: block;
-    margin-bottom:  10vh;
+    margin: 5vh 0 ;
+    border-radius: 3px;
+    box-shadow: 7px 13px 15px 5px rgba(0,0,0,0.30);
 }
 
 .video {
@@ -103,7 +104,8 @@ h3 {
 }
 .first-presentation img {
     width: 500px;
-    border-radius:30px;
+    border-radius:3px;
+    box-shadow: 7px 13px 15px 5px rgba(0,0,0,0.30);
     opacity: 80%;
 }
 
@@ -111,6 +113,20 @@ h3 {
     width: 100%;
     margin: 3vh 0;
 }
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galerie img {
+
+    width: 600px;
+    padding: 3vh;
+    border-radius:3px;
+    opacity: 80%;
+}
+
+
 @media screen and (max-width: 1700px) {
     .top {
         flex-direction: column;
@@ -134,7 +150,7 @@ h3 {
         margin-left: 0;
     }
     .top-txt p {
-        margin-left: auto;
+        margin: 0;
         text-align: center;
     }
 
