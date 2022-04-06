@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City-Go, Votre agence de CityTrip</title>
     <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/europe.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/79c22c92b4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
@@ -38,7 +38,7 @@
             </ul>
         </nav>
     </header>
-    <section class="contact">
+    <section>
         <div class="contact">
             <div class="text-contact">
                 <p>Pour vous le conseil et l’accompagnement sont importants…</p>
@@ -50,53 +50,52 @@
                 <img src="img/page-contact.jpg" alt="Une téléphoniste devant son ordinateur">
             </div>
         </div>
-
+        <!-- Partie Formulaire -->
         <div class="formulaire-contact">
             <div class="text-contact">
-                
                 <form action="contact.html" method="post">
-                    <label>Nom <span>*</span></label>
-                    <input type="text" name="Nom" required>
-                    <label>Prénom</label>
-                    <input type="text" name="prenom" required>
-                    <label>Téléphone</label>
+                    <label>Nom: <span> *</span></label>
+                    <input type="text" name="Nom" placeholder="Votre Nom" required>
+                    <label>Prénom: <span>*</span></label>
+                    <input type="text" name="prenom" placeholder="Votre Prénom" required><br>
+                    <label>Téléphone: <span>*</span></label>
                     <input type="text" name="Telephone" placeholder="+32 X XXX XX XX" required>
-                    <label>Nom</label>
-                    <input type="email" name="email" required>
+                    <label>Email: <span>*</span></label>
+                    <input type="email" name="email" placeholder="Adresse email" required><br>
                     <label>Combien de temps durera votre CityTrip? </label>
                     <input type="range" value="3" min="3" max="15" oninput="this.nextElementSibling.value = this.value">
                     <output>3</output>
                     <fieldset>
-                        <legend>Destination <span>*</span></legend>
+                        <legend>Destination: <span>*</span></legend>
                         <div>
-                          <input type="checkbox" id="amsterdam" name="interest" value="amsterdam">
-                          <label for="amsterdam">Amsterdam</label>
+                            <label for="amsterdam">Amsterdam</label>
+                            <input type="checkbox" id="amsterdam" name="interest" value="amsterdam">
                         </div>
                         <div>
-                          <input type="checkbox" id="athenes" name="interest" value="athenes" checked>
-                          <label for="athenes">Athènes</label>
+                            <label for="athenes">Athènes</label>
+                            <input type="checkbox" id="athenes" name="interest" value="athenes">
                         </div>
                         <div>
-                          <input type="checkbox" id="londres" name="interest" value="londres">
-                          <label for="londres">Londres</label>
+                            <label for="londres">Londres</label>
+                            <input type="checkbox" id="londres" name="interest" value="londres">
                         </div>
                         <div>
-                          <input type="checkbox" id="paris" name="interest" value="paris">
-                          <label for="paris">Paris</label>
+                            <label for="paris">Paris</label>
+                            <input type="checkbox" id="paris" name="interest" value="paris" >
                         </div>
                         <div>
-                          <input type="checkbox" id="porto" name="interest" value="porto">
-                          <label for="porto">Porto</label>
+                            <label for="porto">Porto</label>
+                            <input type="checkbox" id="porto" name="interest" value="porto">
                         </div>
                         <div>
-                          <input type="checkbox" id="autres" name="interest" value="autres">
-                          <label for="autres">Autres</label>
+                            <label for="autres">Autres</label>
+                            <input type="checkbox" id="autres" name="interest" value="autres">
                         </div>
-                      </fieldset>
-                      <label>Une demande particulière ou une information?</label>
-                      <textarea name="demande" id="demande" cols="56" rows="15">
-                      </textarea>
-                      <button type="submit">Envoyer!</button>
+                    </fieldset>
+                    <label>Une demande particulière ou une information?</label><br>
+                    <textarea name="demande" id="demande" cols="35" rows="5" placeholder="Un souhait,une question ? ">
+                      </textarea><br>
+                    <button type="submit">Envoyer!</button>
                 </form>
             </div>
         </div>

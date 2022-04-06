@@ -107,24 +107,26 @@ nav ul li.btn.hide i:before{
 
 /* Bas de page  */
 
-footer {
+footer{
   color: #f3f3f3;
   background-color: #2f4150;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-.foo-mobile {
+.foo-mobile{
   display: none;
 }
-footer p {
-  float: left;
-  padding: 1vh;
+footer p{
+  margin-left: 15px;
+  align-self: center;
 }
 
-.social {
-  float: right;
+.social{
   padding-top: 1vh;
   padding-right: 2vh;
 }
+
 footer i{
   font-size: 25px;
   color: #f3f3f3;
