@@ -55,13 +55,16 @@ section {
 }
 
 @media screen and (max-width: 1700px) {
+
     .presentation-europe{
         flex-direction: column-reverse;
         align-items: center;
     }
     .presentation-europe img {
         padding-bottom: 1vh;
-        margin-left: 0;
-        margin-top: 0;
+        padding-bottom: 1vh;
+        margin:0;
+        height: auto;
+        width: 350px;
     }
 }

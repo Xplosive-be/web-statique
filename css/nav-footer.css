@@ -1,38 +1,43 @@
 /* RESET du CSS  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 3vh;
 }
 
 
 /* NAV + header */
-nav{
+nav {
   padding: 5px 40px;
   border-bottom: 2px solid #466075;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-nav ul li{
+
+nav ul li {
   padding: 15px 0;
   cursor: pointer;
 }
-nav ul li.items{
+
+nav ul li.items {
   position: relative;
   width: auto;
   margin: 0 16px;
   text-align: center;
   order: 3;
 }
-nav ul li.items:after{
+
+nav ul li.items:after {
   position: absolute;
   content: '';
   left: 0;
@@ -43,11 +48,13 @@ nav ul li.items:after{
   opacity: 0;
   transition: all 0.2s linear;
 }
-nav ul li.items:hover:after{
+
+nav ul li.items:hover:after {
   opacity: 1;
   bottom: 8px;
 }
-nav ul li.logo{
+
+nav ul li.logo {
   flex: 1;
   color: #466075;
   text-shadow: 1px 2px 3px #666;
@@ -56,49 +63,61 @@ nav ul li.logo{
   cursor: default;
   user-select: none;
 }
-nav ul li a{
+
+
+nav ul li a {
   color: #466075;
   font-size: 18px;
   text-decoration: none;
   transition: .4s;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
   color: #466075;
 }
-nav ul li i{
+
+nav ul li i {
   font-size: 23px;
 }
-nav ul li.btn{
+
+nav ul li.btn {
   display: none;
 }
-nav ul li.btn.hide i:before{
+
+nav ul li.btn.hide i:before {
   content: '\f00d';
 }
 
 /* Reponsive menu , le chiffre est décidé par rapport au faite que la police ne deviens plus lisibile en dessous de 1150px */
-@media all and (max-width: 1200px){
-  nav{
+@media all and (max-width: 1200px) {
+  nav {
     padding: 5px 30px;
 
   }
-  nav ul li.items{
+
+  nav ul li.items {
     width: 100%;
     display: none;
   }
-  nav ul li.items.show{
+
+  nav ul li.items.show {
     display: block;
   }
-  nav ul li.btn{
+
+  nav ul li.btn {
     display: block;
   }
-  nav ul li.items:hover{
+
+  nav ul li.items:hover {
     border-radius: 5px;
     box-shadow: inset 0 0 5px #466075,
-                inset 0 0 10px #2f4150;
+      inset 0 0 10px #2f4150;
   }
-  nav ul li.items:hover:after{
+
+  nav ul li.items:hover:after {
     opacity: 0;
   }
+
   * {
     line-height: 5vh;
   }
@@ -107,64 +126,48 @@ nav ul li.btn.hide i:before{
 
 /* Bas de page  */
 
-footer{
+footer {
   color: #f3f3f3;
   background-color: #2f4150;
   height: 50px;
   display: flex;
   justify-content: space-between;
 }
-.foo-mobile{
+
+.foo-mobile {
   display: none;
 }
-footer p{
+
+footer p {
   margin-left: 15px;
   align-self: center;
 }
 
-.social{
+.social {
   padding-top: 1vh;
   padding-right: 2vh;
 }
 
-footer i{
+footer i {
   font-size: 25px;
   color: #f3f3f3;
   padding-left: 1vh;
 }
 
-@media all and (max-width: 840px){
-  .foo-mobile{
+@media all and (max-width: 840px) {
+  footer {
+    height: auto;
+  }
+
+  .foo-mobile {
     display: inline;
   }
 
-  .foo-desktop{
+  .foo-desktop {
     display: none;
   }
 
   footer {
-    height: 50px;
+    height: auto;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

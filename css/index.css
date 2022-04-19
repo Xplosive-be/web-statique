@@ -1,18 +1,19 @@
 
-
 /* Image Principal */
 .accueil {
-  width: 100%;
   height: auto;
   background-image: url('../img/bg_image.jpg');
   background-size: cover;
   background-position: center;
   padding-top: 1px;
   border-bottom: 2px solid #466075;
+  border-left: 2px solid #466075;
+  border-right: 2px solid #466075;
 }
 .accueil h2 {
   text-align: center;
   font-size: 100px;
+  line-height: 150px;
   text-shadow: 0 0 10px #000;
   color: #f1f1f1;
   margin: 10vh 0 0 0;
@@ -45,8 +46,9 @@
   margin: 5px 0;
   text-shadow: 0 0 10px #000;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .accueil {
+      margin-top: 5px;
       height: auto;
   }
   .accueil h2 {
@@ -67,7 +69,9 @@
 /* Organisation avec les 3 icones */
 
 #organisation {
+  width: 70%;
   margin: 3vh auto;
+  
 }
 .etapes {
   display: flex;
@@ -103,15 +107,17 @@
     margin: 2vh auto;
     border-top: none;
     border-bottom: none;
+    width: 90%;
   }
 }
 
 /* Section A propos  */
 
 #apropos {
+  width: 70%;
   border-bottom: 3px solid rgba(0,0,0,0.1);
   border-top: 3px solid rgba(0,0,0,0.1);
-  margin: 5vh auto 5vh;
+  margin: 5vh auto;
 }
 #apropos h2{
   font-size: 32px;
@@ -148,8 +154,10 @@
   font-style: italic;
 }
 
-@media (max-width: 1080px) {
-  
+@media (max-width: 1300px) {
+  #apropos {
+      width: 90%;
+  }
   #apropos h2{
     margin-left: 4vh;
     font-size: 27px;
@@ -177,7 +185,8 @@
 /* Section equipe  */
 
 #equipe {
-  margin-top: 5vh;
+  width: 70%;
+  margin: 5vh auto;
 }
 #equipe h2 {
   font-size: 32px;
@@ -216,6 +225,9 @@
   text-align: center;
 }
 @media (max-width:1080px) {
+  #equipe {
+      width: 90%;
+  }
   .equipe-block{
     flex-direction: column;
     align-items: center;
@@ -225,6 +237,11 @@
   }
   #equipe h2 {
     font-size: 27px;
+    margin-left: 0;
+    text-align: center;
+  }
+  #equipe>p{
+    margin-left: 0;
     text-align: center;
   }
 }
